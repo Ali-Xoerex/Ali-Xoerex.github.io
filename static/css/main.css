@@ -1,0 +1,59 @@
+@font-face{
+    font-family: 'Sahel';
+    src: url(../fonts/Sahel-Black.ttf);
+}
+
+#main{
+    direction: rtl;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 18px;
+    padding-top: 20px;
+    font-family: 'Vazir';
+    transition: margin-left 1s;
+}
+
+.text h3{
+    font-family: 'Sahel';
+}
+
+.controls a,button{
+    background: transparent;
+    border: none;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.active{
+    color: greenyellow;
+}
+
+#closebtn{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sidebar{
+    font-family: 'Vazir';
+    position: fixed;
+    overflow-x: hidden;
+    background: rgba(29, 29, 30,0.9);
+    width:0;
+    top: 0;
+    color: whitesmoke;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    font-size: 20px;
+    transition: width 1s; 
+}

@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'Vazir';
+    src: url(../fonts/Vazir.ttf);
+}
+
+@font-face{
+    font-family: 'Sahel-Black';
+    src: url(../fonts/Sahel-Black.ttf);
+}
+
+@keyframes up{
+    to{
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes down{
+    to{
+        transform: translateY(2px);
+    }
+}
+
+body{
+    background: #242623;
+    margin: 0;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cover img{
+    order: 2;
+    z-index: 1;
+}
+
+.choice{
+    color: whitesmoke;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Sahel-Black';
+}
+
+.up{
+    order: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(75px);
+    animation: up 1s forwards;
+    flex-direction: column;
+}
+.down{
+    order: 3;
+    display: flex;
+    align-items: center;
+    transform: translateY(-75px);
+    animation: down 1s forwards;
+    flex-direction: column;
+}
