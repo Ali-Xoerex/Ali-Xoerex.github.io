@@ -1,4 +1,9 @@
 @font-face{
+    font-family: 'Vazir';
+    src: url(../fonts/Vazir.ttf);
+}
+
+@font-face{
     font-family: 'Sahel';
     src: url(../fonts/Sahel-Black.ttf);
 }
@@ -11,6 +16,10 @@
     padding-top: 20px;
     font-family: 'Vazir';
     transition: margin-left 1s;
+}
+
+.text p{
+    font-family: 'Vazir';
 }
 
 .text h3{
