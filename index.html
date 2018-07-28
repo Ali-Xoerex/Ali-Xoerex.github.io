@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IWoz Cover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="static/css/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+    <div class="navigation">
+      <div class="main">
+          <div class="left">
+              <div class="logo"><img src="apple.png" alt=""></div>
+              <div class="item">IWoz</div>
+          </div>
+          <div id="clock" class="right">
+          </div>
+      </div>
+    </div>
+    <div class="title">
+      <div class="window">
+        <div class="header">
+          <div class="buttons" style="display:flex;flex-direction:row">
+            <div class="close">
+              X
+            </div>
+            <div class="size">
+                -
+            </div>
+            <div class="minimize">
+                +
+            </div>
+          </div>  
+          <div class="h">IWoz</div>
+        </div>
+        <div class="content">
+          IWoz
+        </div>
+      </div>
+    </div>
+    <div class="dock">
+      <div class="icons">
+        <a href="https://github.com/Ali-Xoerex/Ali-Xoerex.github.io" role="button"><img src="static/img/github.png" alt=""></a>
+        <a href="chapters/1/1.html" role="button"><img src="static/img/book.png" alt=""></a>
+      </div>
+    </div>
+    <script>
+      function update_clock(){
+        let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"]
+        let date = new Date();
+        let clock = date.toLocaleTimeString();
+        document.getElementById('clock').innerText = days[date.getDay()]+' '+clock
+      }
+      setInterval(update_clock,1000);
+    </script>
+</body>
+</html>
