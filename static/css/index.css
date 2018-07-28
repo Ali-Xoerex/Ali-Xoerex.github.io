@@ -3,6 +3,10 @@
   src: url(../fonts/halogen.otf);
 }
 
+body{
+  height: 100vh;
+}
+
 @keyframes iwoz{
   to{
     text-shadow: 1px 1px green;
