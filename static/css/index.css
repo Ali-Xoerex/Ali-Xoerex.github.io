@@ -50,6 +50,9 @@ body{
   border-top-left-radius: 1%;
   border-top-right-radius: 1%;
   background: -moz-linear-gradient(to top,#ebebeb, #d5d5d5);
+  background: -webkit-linear-gradient(to top,#ebebeb, #d5d5d5);
+  background: -o-linear-gradient(to top,#ebebeb, #d5d5d5);
+  background: linear-gradient(to top,#ebebeb, #d5d5d5);
 }
 
 .close{
