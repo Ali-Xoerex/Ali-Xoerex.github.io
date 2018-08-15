@@ -3,10 +3,6 @@
   src: url(../fonts/halogen.otf);
 }
 
-body{
-  height: 100vh;
-}
-
 @keyframes iwoz{
   to{
     text-shadow: 1px 1px green;
@@ -21,10 +17,8 @@ body{
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
-}
-
-.item , #clock{
-  margin-top: 3px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .navigation{
@@ -37,12 +31,43 @@ body{
   color: whitesmoke;
 }
 
+.right{
+  margin-right: 10px;
+}
+
+.left{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 85px;
+  margin-left: 10px;
+}
+
+.item , #clock{
+  margin-top: 3px;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .title{
-  margin-top: 3%;
+  padding-top: 2%;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.window{
+  border: 2px solid #ebebeb;
+  background: rgba(109, 110, 112,0.3);
+  border-radius: 1%;
+  width: 800px;
+  height: 70%;
+  max-height: auto;
 }
 
 .header{
@@ -117,11 +142,6 @@ body{
   min-width: 55px;
 }
 
-.right{
-  margin-right: 10px;
-}
-
-
 .content{
   display: flex;
   justify-content: center;
@@ -132,33 +152,9 @@ body{
   animation: iwoz 2s forwards;
 }
 
-.window{
-  border: 2px solid #ebebeb;
-  background: rgba(109, 110, 112,0.3);
-  border-radius: 1%;
-  width: 800px;
-  height: 70%;
-  max-height: auto;
-  margin-bottom: 4%;
-}
-
-.main{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .icons{
   display: flex;
   justify-content: space-around;
-}
-
-.left{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  min-width: 85px;
-  margin-left: 10px;
 }
 
 .dock{
@@ -170,4 +166,78 @@ body{
   left: 25%;
   bottom: 0;
   position: fixed;
+}
+
+@media screen and (max-height: 280px){
+	.dock{
+		width: 60%;
+	}
+	body{
+		overflow: scroll;
+	}
+	.title{
+		margin-top:8%;
+	}
+	.navigation{
+		position: relative;
+	}
+	.dock{
+		visibility: visible;
+		position: relative;
+	}
+	.content{
+		font-size: 65px;
+		height: 80%;
+	}
+}
+
+@media screen and (max-height: 180px){
+	body{
+		overflow: scroll;
+	}
+	.title{
+		margin-top:8%;
+	}
+	.dock{
+		visibility: visible;
+		position: relative;
+	}
+	.content{
+		font-size: 45px;
+		height: 75%;
+	}
+}
+
+@media screen and (max-height: 100px){
+	body{
+		overflow: scroll;
+	}
+	.title{
+		margin-top:8%;
+	}
+	.dock{
+		visibility: hidden;
+		position: relative;
+	}
+	.content{
+		font-size: 20px;
+		height: 50%;
+	}
+}
+
+@media screen and (max-height: 150px){
+	body{
+		overflow: scroll;
+	}
+	.title{
+		margin-top:8%;
+	}
+	.dock{
+		visibility: visible;
+		position: relative;
+	}
+	.content{
+		font-size: 20px;
+		height: 50%;
+	}
 }
